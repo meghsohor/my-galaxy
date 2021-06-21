@@ -1,0 +1,41 @@
+{
+  "colors": [
+    "RED",
+    "BLUE",
+    "GREEN",
+    "YELLOW",
+    "BLACK"
+  ],
+  "stars": [
+    {
+      "color": "RED",
+      "id": 123,
+      "name": "My happy star 123",
+      "universeId": 333
+    },
+    {
+      "color": "YELLOW",
+      "id": 321,
+      "name": "321 is myy happy star",
+      "universeId": 333
+    },
+    {
+      "id": "1d823762-1b2f-4534-8b7d-375fbca04562",
+      "name": "Twinkle Little Star",
+      "color": "BLUE",
+      "universeId": "71b825e2-4fed-4cfc-9357-a74ea8381f38"
+    }
+  ],
+  "universes": [
+    {
+      "id": 333,
+      "maxSize": 3,
+      "name": "Big universe"
+    },
+    {
+      "id": "71b825e2-4fed-4cfc-9357-a74ea8381f38",
+      "name": "My Universe",
+      "maxSize": "25"
+    }
+  ]
+}

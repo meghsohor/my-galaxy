@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# JS Frontend Test
+The project is built with **React, React-Router, Axios, Material UI**.
+## Run the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the project directory:
 
-## Available Scripts
+```bash
+# Install dependenicies
+npm install
+# Run the FE project and the BE mock server simultaniously
+npm run dev
+# Run the test suit
+npm run test
+```
 
-In the project directory, you can run:
+## Task 0 - a little bit of writing 
 
-### `npm start`
+   * What’s your proudest achievement? It can be a personal project or something you’ve worked on professionally. Just a short paragraph is fine, but we’d love to know why you’re proud of it.
+   * **Ans:** My personal blog site ([www.meghsohor.com](https://www.meghsohor.com/)) which I built using Gatsby JS and deployed the site in Netlify. The site I built from the scratch and it was my first Gatsby project. Not only I learned new technologies when I worked on this project but also I managed to cut down the hosting cost by moving the site in Netlify for free of charge.
+   
+   * Tell us about a technical book or article you read recently, why you liked it, and why we should read it as well.
+   * **Ans:** I have recently read this article from Stackblitz: [Run Node js in the Web Browsers](https://blog.stackblitz.com/posts/introducing-webcontainers/). Here the author talks about a new technology called **WebContainer** that allows to run Node.js server in the web browsers. This technology has many significant benefits like: 1) Faster than local environment 2) Debugging Node applications in the browser 3) Secured environment etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Task 1 - Show a static HTML page
 
-### `npm test`
+   * Add an index.html with a headline to your project with a simple "Hello World"
+   * Include a css-file and a js-file
+   * Open the page in the browser, it should display the page and load the css- and js-file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Task 2 - Add a Menu & Single-Page-Site
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   * Add a menu to your page with the three entries:
+      * Universes
+      * Stars
+      * Imprint
+   * The three pages should be navigable and it should be a single page website
+   * What could the design of the site look like? Implement some of your ideas.
+   * Use a logo of your choice for the site 
+   * BONUS: The current page is highlighted in the menu
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Task 3 - Loading Data from a REST-Service
 
-### `npm run eject`
+   * Display all Universes and Stars provided by the mock server 
+   * A simple table on the "universes"-site for displaying all universes
+   * A simple table on the "stars"-site for displaying all the stars
+   * HINT: A simple table means a simple representation - just display the info
+   * BONUSES:
+      * Universes: display the maximum and current size
+      * Stars: display the name of the universe
+      * Use the color of the star for some CSS styling (the colors are RED, BLUE, GREEN, YELLOW, BLACK)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you start the json-server with the mocked data it will present you with the list of available resource paths.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Task 4 - JavaScript Toolchain
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   * Use a CSS-Preprocessor to generate your CSS
+   * Minify your CSS and JS and use the minified version in your application
+   * HINT You don't need to automate the CSS-Preprocessor or minifying
+   * BONUS-Task: Use a build tool or task runner to automate the build of your application
+      * Do this only if you can do this fast enough, don't waste time
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Task 5 - Test your application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * Implement at least one test that encodes the business rules of your application
+   * It is ok if the test(s) is called manually
+   * BONUS: your test(s) run without network access to the api (json-server)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Task 6 - CRUD for universes
 
-### Analyzing the Bundle Size
+   * Add a "Create-Universe-View" to the universe site where you can add a new universe. Each universe should have a unique id. 
+   * Add a "Details-Universe-View" to the universe where you display only the stars from this universe
+   * Add a "Create-Star-View" in the details view where you can add a star to the universe. A star can only be added to an existing universe.
+   * Add a "Delete-Star-Button" to the details view where you can delete a star.
+   * BONUS: The details view for a given universe can be reached with a deep link (e.g. ```http://localhost:1234/.../universes/<id>```)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
